@@ -1,8 +1,4 @@
+
 {
-  "version": 2,
-  "functions": {
-    "api/stories.js": {
-      "runtime": "nodejs24.x"
-    }
-  }
+  "version": 2
 }
