@@ -1,7 +1,7 @@
 {
   "version": 2,
   "functions": {
-    "server.js": {
+    "api/stories.js": {
       "runtime": "nodejs24.x"
     }
   }
