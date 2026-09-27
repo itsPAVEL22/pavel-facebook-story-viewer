@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boisakhi — Pavel × Sohag Story Room</title>
+  <meta name="description" content="A personal public Facebook Story viewer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <main class="shell">
+    <nav class="topbar">
+      <div class="logo"><span class="logo-mark">B</span><div><b>BOISAKHI</b><small>story room</small></div></div>
+      <div class="duo"><span>Pavel</span><i>×</i><span>Sohag</span></div>
+    </nav>
+
+    <section class="hero">
+      <div class="eyebrow"><span class="dot"></span> PERSONAL STORY ROOM</div>
+      <h1>দেখি আজকে<br><em>নতুন কী কাণ্ড…</em> 👀</h1>
+      <p class="hero-copy">শুধু public Facebook Stories খুঁজে দেখো। কোনো password, login বা private access দরকার নেই।</p>
+
+      <form id="searchForm" class="search-card">
+        <div class="input-wrap">
+          <span class="input-icon">⌕</span>
+          <input id="profileUrl" type="url" placeholder="Facebook profile / page URL" autocomplete="off" required />
+        </div>
+        <button id="searchBtn" type="submit"><span>View Stories</span><b>→</b></button>
+      </form>
+      <div class="micro-copy">Pavel + Sohag Investigation Department™ — <span>কিছুই দেখিনি ভাই 🤫</span></div>
+    </section>
+
+    <section id="status" class="status hidden"></section>
+
+    <section id="profileCard" class="profile-card hidden">
+      <div class="profile-main">
+        <div class="avatar"><span id="avatarLetter">B</span></div>
+        <div><div id="profileName" class="profile-name"></div><div id="profileUrlText" class="profile-url"></div></div>
+      </div>
+      <div class="count-pill"><strong id="storyCount">0</strong><span>ACTIVE STORIES</span></div>
+    </section>
+
+    <section id="viewer" class="viewer hidden">
+      <div class="section-head"><div><span class="tiny-label">PUBLIC STORIES</span><h2>Story shelf</h2></div><span id="counter" class="counter"></span></div>
+      <div id="storyGrid" class="grid"></div>
+    </section>
+
+    <footer><span>BOISAKHI</span> · Personal public-story viewer · Pavel × Sohag</footer>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="story-shell">
+      <div class="progress" id="progress"></div>
+      <div class="modal-top"><span id="modalTitle">STORY</span><button id="closeModal" class="close">×</button></div>
+      <div id="modalContent" class="modal-content"></div>
+      <button id="prev" class="nav left">‹</button><button id="next" class="nav right">›</button>
+      <div class="modal-bottom"><span id="modalIndex"></span><span>← → navigate · ESC close</span></div>
+    </div>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
